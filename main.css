@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Fredoka:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header h1 {
+    font-family: "Fredoka", sans-serif;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+form, 
+form input,
+form textarea,
+form button,
+input:focus,
+textarea:focus {
+    outline-color: #00e3cc;
+    display: block;
+    width: 320px;
+    font-family: "Fredoka", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    padding: 8px;
+    border-radius: 8px;
+    
+}
+
+.text { 
+    background-clip: text;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #00e3cc, #32a89c, #009688,#44e3d3);
+    background-size: 400% 100%;
+    animation: degrade 10s linear infinite alternate;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Fredoka", sans-serif;
+}
+
+@keyframes degrade {
+    0%{
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position: 400%;
+    }
+}   
+
+header,
+section h2 {
+    font-family: "Fredoka", sans-serif;
+    padding: 16px 0;
+    background-color: #1a1a1a;
+    color: #ecf0f1;
+    font-size: 34px;    
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 24px;
+    font-family: "Fredoka", sans-serif;
+}
+
+header nav li a {
+    font-family: "Fredoka", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container,
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brands-list img {
+    height: 24px;
+    margin-right: 8px;
+}
+
+.brands-list li {
+    display: inline;
+}
+
+section .container {
+    align-items: flex-start;
+}
+
+section {
+    padding: 24px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+    font-family: "Fredoka", sans-serif;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+section p {
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.store-front {
+    background-color: white;
+    padding: 5px;
+    margin: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-right: 32px;
+    border-radius: 8px;
+}
+
+.social-links img {
+    height: 24px;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li a {
+    text-decoration: none;
+}
+
+#contact .container {
+    display: block;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+}
+
+form textarea {
+    resize: none;
+    height: 180px;
+}
+
+section h3 {
+    margin-bottom: 16px;
+}
+
+form button {
+    background-color: #1a1a1a;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #272727;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 16px 0;
+}
